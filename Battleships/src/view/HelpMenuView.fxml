@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import controller.HelpMenuController ?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0"
+	style="-fx-background-color: #1e2f3f;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelpMenuController">
+	<children>
+		<AnchorPane layoutX="3.0" layoutY="6.0" prefHeight="93.0"
+			prefWidth="650.0" style="-fx-background-color: #1e2f3f;">
+			<children>
+				<Separator layoutX="44.0" layoutY="93.0" opacity="0.8"
+					prefHeight="1.0" prefWidth="575.0" />
+				<Label layoutX="250.0" layoutY="23.0" text="H E L P" textFill="WHITE">
+					<font>
+						<Font name="Garamond Bold" size="42.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+		<AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="93.0"
+			prefWidth="150.0">
+			<children>
+				<ImageView fitHeight="60.0" fitWidth="63.0" layoutX="45.0"
+					layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/helpIcon.png" />
+					</image>
+				</ImageView>
+			</children>
+		</AnchorPane>
+		<AnchorPane layoutY="101.0" prefHeight="302.0" prefWidth="348.0">
+			<children>
+				<Separator layoutX="331.0" layoutY="29.0" orientation="VERTICAL"
+					prefHeight="245.0" prefWidth="6.0" />
+				<JFXButton fx:id="backBtn" buttonType="RAISED"
+					cancelButton="true" layoutX="22.0" layoutY="257.0" prefHeight="30.0"
+					prefWidth="99.0"
+					style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+					text="Back" textFill="WHITE">
+					<effect>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</effect>
+					<font>
+						<Font name="Garamond Bold" size="18.0" />
+					</font>
+				</JFXButton>
+				<TabPane fx:id="helpTab" layoutX="45.0" layoutY="11.0"
+					prefHeight="232.0" prefWidth="265.0" style="-fx-background-color: #21384f;"
+					tabClosingPolicy="UNAVAILABLE" tabMinHeight="25.0" tabMinWidth="70.0">
+					<tabs>
+						<Tab fx:id="rulesTab" text="Rules">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0"
+									prefHeight="191.0" prefWidth="268.0">
+									<children>
+										<Text fill="WHITE" layoutX="22.0" layoutY="24.0"
+											lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0"
+											text="Place the 5 ships on the board.  The ships can only be placed vertically or horizontally and may not overlap each other. The boards are marked with pegs:  red for hit, black for miss. The first player to sink all the opponent’s ships wins."
+											wrappingWidth="220.13671875">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab fx:id="nationsTab" text="Nations">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0"
+									prefHeight="180.0" prefWidth="200.0">
+									<children>
+										<Text fill="WHITE" layoutX="10.0" layoutY="26.0"
+											strokeType="OUTSIDE" strokeWidth="0.0"
+											text="Pledge your allegiance to a nation of your choice."
+											wrappingWidth="188.693359375">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+										<Text fill="WHITE" layoutX="40.0" layoutY="76.0"
+											strokeType="OUTSIDE" strokeWidth="0.0"
+											text="• Great British Royal Marines" wrappingWidth="199.693359375"
+											AnchorPane.bottomAnchor="122.0">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+										<Text fill="WHITE" layoutX="40.0" layoutY="114.0"
+											strokeType="OUTSIDE" strokeWidth="0.0" text="• North Korea’s KPN"
+											wrappingWidth="188.693359375">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+										<Text fill="WHITE" layoutX="40.0" layoutY="155.0"
+											strokeType="OUTSIDE" strokeWidth="0.0" text="• US Navy SEALs"
+											wrappingWidth="188.693359375">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab fx:id="perksTab" text="Perks">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0"
+									prefHeight="180.0" prefWidth="200.0">
+									<children>
+										<Text fill="WHITE" layoutX="14.0" layoutY="28.0"
+											strokeType="OUTSIDE" strokeWidth="0.0"
+											text="Each nation will have the same perk; an experimental nuke."
+											wrappingWidth="217.0078125">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+										<Text fill="WHITE" layoutX="14.0" layoutY="87.0"
+											strokeType="OUTSIDE" strokeWidth="0.0"
+											text="The nuke explosion allows you to destroy multiple cells in one shot."
+											wrappingWidth="217.0078125">
+											<font>
+												<Font name="Garamond Bold" size="16.0" />
+											</font>
+										</Text>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+					</tabs>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</TabPane>
+			</children>
+		</AnchorPane>
+		<AnchorPane layoutX="357.0" layoutY="100.0" prefHeight="302.0"
+			prefWidth="298.0">
+			<children>
+				<Label contentDisplay="CENTER" layoutX="14.0" layoutY="57.0"
+					prefHeight="28.0" prefWidth="164.0" text="Vertical Placement :"
+					textFill="WHITE">
+					<font>
+						<Font name="Garamond" size="18.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="60.0" fitWidth="58.0" layoutX="67.0"
+					layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/leftClickIcon.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="73.0" fitWidth="22.0" layoutX="209.0"
+					layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/ShipVerticle.PNG" />
+					</image>
+				</ImageView>
+				<Label contentDisplay="CENTER" layoutX="14.0" layoutY="168.0"
+					prefHeight="28.0" prefWidth="164.0" text="Horizontal Placement :"
+					textFill="WHITE">
+					<font>
+						<Font name="Garamond" size="18.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="58.0" fitWidth="58.0" layoutX="67.0"
+					layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/rightClickIcon.png" />
+					</image>
+				</ImageView>
+				<ImageView fitHeight="20.0" fitWidth="60.0" layoutX="187.0"
+					layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/ShipHorizontal.PNG" />
+					</image>
+				</ImageView>
+				<Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0"
+					prefHeight="28.0" prefWidth="164.0" text="CONTROLS :" textFill="WHITE">
+					<font>
+						<Font name="Garamond" size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

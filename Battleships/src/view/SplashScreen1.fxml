@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import controller.SplashScreenController?>
+
+<StackPane prefHeight="400.0" prefWidth="650.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.SplashScreenController">
+	<children>
+		<Pane prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: white;">
+			<children>
+				<Text fill="#1f2472" fontSmoothingType="LCD" layoutX="252.0"
+					layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phony">
+					<font>
+						<Font name="ZrnicRg-Regular" size="50.0" />
+					</font>
+				</Text>
+				<Text fill="#1f2472" layoutX="244.0" layoutY="337.0"
+					strokeType="OUTSIDE" strokeWidth="0.0" text="Entertainment ™">
+					<font>
+						<Font name="Candara" size="25.0" />
+					</font>
+				</Text>
+				<ImageView fitHeight="171.0" fitWidth="170.0" layoutX="230.0"
+					layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/PCE%20logo.png" />
+					</image>
+				</ImageView>
+				<Text fill="#1f2472" layoutX="244.0" layoutY="310.0"
+					strokeType="OUTSIDE" strokeWidth="0.0" text="COMPUTER"
+					wrappingWidth="156.6719970703125">
+					<font>
+						<Font name="Candara" size="30.0" />
+					</font>
+				</Text>
+			</children>
+		</Pane>
+	</children>
+</StackPane>

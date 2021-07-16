@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import controller.MainMenuController ?>
+<?import controller.OptionsMenuController ?>
+
+<AnchorPane fx:id="MainMenuView" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+
+	<children>
+		<ImageView fitHeight="400.0" fitWidth="650.0">
+			<image>
+				<Image url="@../media/images/MainMenuBG.jpg" />
+			</image>
+		</ImageView>
+		<JFXButton fx:id="newGameBtn" buttonType="RAISED" layoutX="14.0"
+			layoutY="134.0" prefHeight="41.0" prefWidth="199.0"
+			style="-fx-background-color: white;" stylesheets="@../css/mainMenuStyle.css"
+			text="New Game">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</input>
+				</InnerShadow>
+			</effect>
+		</JFXButton>
+		<JFXButton fx:id="optionsBtn" buttonType="RAISED" layoutX="14.0"
+			layoutY="189.0" prefHeight="41.0" prefWidth="199.0"
+			style="-fx-background-color: white;" stylesheets="@../css/mainMenuStyle.css"
+			text="Options">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</input>
+				</InnerShadow>
+			</effect>
+		</JFXButton>
+		<JFXButton fx:id="helpBtn" buttonType="RAISED" layoutX="14.0"
+			layoutY="244.0" prefHeight="41.0" prefWidth="199.0"
+			style="-fx-background-color: white;" stylesheets="@../css/mainMenuStyle.css"
+			text="Help">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</input>
+				</InnerShadow>
+			</effect>
+		</JFXButton>
+		<JFXButton fx:id="exitBtn" buttonType="RAISED" layoutX="14.0"
+			layoutY="299.0" prefHeight="41.0" prefWidth="199.0"
+			style="-fx-background-color: white;" stylesheets="@../css/mainMenuStyle.css"
+			text="Exit">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</input>
+				</InnerShadow>
+			</effect>
+		</JFXButton>
+
+
+		<Text fill="#fcfafa" layoutX="14.0" layoutY="89.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="NAVAL WARFARE" wrappingWidth="635.0">
+			<font>
+				<Font name="Call of Ops Duty" size="90.0" />
+			</font>
+
+		</Text>
+	</children>
+</AnchorPane>

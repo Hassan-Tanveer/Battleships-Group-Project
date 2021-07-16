@@ -1,0 +1,13 @@
+.toggle-button {
+  -fx-text-align: center;
+  -fx-font-family: "Garamond";
+  -fx-font-size: 15px;
+  -fx-background-color: white;
+}
+
+.toggle-button:selected {
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+  -fx-background-color: white;
+  -fx-border-color: black;
+}

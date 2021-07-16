@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import battleship.Grid?>
+<?import controller.ShipsController?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="650.0" style="-fx-background-color: #1e2f3f;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShipsController">
+	<children>
+		<Grid fx:id="grid" enemy="false" />
+
+		<ImageView fx:id="imageview" fitHeight="48.0" fitWidth="240.0"
+			layoutX="357.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+		<ToggleButton fx:id="desBtn" layoutX="361.0" layoutY="200.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0"
+			stylesheets="@../css/shipStyle.css" text="Destroyer">
+
+			<toggleGroup>
+				<ToggleGroup fx:id="ships" />
+			</toggleGroup>
+		</ToggleButton>
+		<ToggleButton fx:id="cruBtn" layoutX="479.0" layoutY="200.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0"
+			stylesheets="@../css/shipStyle.css" text="Cruiser" toggleGroup="$ships" />
+		<ToggleButton fx:id="subBtn" layoutX="361.0" layoutY="244.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0"
+			stylesheets="@../css/shipStyle.css" text="Submarine" toggleGroup="$ships" />
+		<ToggleButton fx:id="bsBtn" layoutX="479.0" layoutY="244.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0"
+			stylesheets="@../css/shipStyle.css" text="Battleship" toggleGroup="$ships" />
+		<ToggleButton fx:id="airBtn" layoutX="417.0" layoutY="286.0"
+			mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0"
+			stylesheets="@../css/shipStyle.css" text="Aircraft Carrier"
+			toggleGroup="$ships" />
+		<JFXButton fx:id="backBtn" buttonType="RAISED" cancelButton="true"
+			layoutX="40.0" layoutY="352.0" prefHeight="25.0" prefWidth="118.0"
+			style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+			text="Back" textFill="WHITE">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow />
+					</input>
+				</InnerShadow>
+			</effect>
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+		</JFXButton>
+
+
+		<JFXButton fx:id="resetBtn" buttonType="RAISED"
+			cancelButton="true" layoutX="195.0" layoutY="352.0" prefHeight="25.0"
+			prefWidth="118.0"
+			style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+			text="Reset" textFill="WHITE">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow />
+					</input>
+				</InnerShadow>
+			</effect>
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+		</JFXButton>
+
+		<JFXButton fx:id="randomBtn" buttonType="RAISED"
+			cancelButton="true" layoutX="350.0" layoutY="352.0" prefHeight="25.0"
+			prefWidth="118.0"
+			style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+			text="Randomise" textFill="WHITE">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow />
+					</input>
+				</InnerShadow>
+			</effect>
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+		</JFXButton>
+
+
+		<JFXButton id="saveBtn" fx:id="submitBtn" buttonType="RAISED"
+			cancelButton="true" layoutX="497.0" layoutY="352.0" prefHeight="30.0"
+			prefWidth="99.0"
+			style="-fx-background-color: #f27121; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+			text="Submit" textFill="WHITE">
+
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow />
+					</input>
+				</InnerShadow>
+			</effect>
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+		</JFXButton>
+
+		<ImageView fx:id="flag" fitHeight="113.0" fitWidth="137.0"
+			layoutX="409.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+
+
+		<JFXButton fx:id="helpBtn" cancelButton="true"
+			ellipsisString="" layoutX="582.0" layoutY="10.0" prefHeight="48.0"
+			prefWidth="48.0"
+			style="-fx-background-color: #1e2f3f; -fx-background-radius: 5em;"
+			text=" " textFill="WHITE">
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+			<graphic>
+				<ImageView fitHeight="42.0" fitWidth="42.0">
+					<image>
+						<Image url="@../media/images/helpIcon.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</JFXButton>
+	</children>
+</AnchorPane>

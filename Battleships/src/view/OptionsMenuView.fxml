@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<?import controller.OptionsMenuController ?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="650.0" style="-fx-background-color: #1e2f3f;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OptionsMenuController">
+	<children>
+		<AnchorPane prefHeight="93.0" prefWidth="650.0"
+			style="-fx-background-color: #1e2f3f;">
+			<children>
+				<Label layoutX="196.0" layoutY="22.0" text="O P T I O N S"
+					textFill="WHITE">
+					<font>
+						<Font name="Garamond Bold" size="42.0" />
+					</font>
+				</Label>
+				<Separator layoutX="44.0" layoutY="93.0" opacity="0.8"
+					prefHeight="1.0" prefWidth="575.0" />
+			</children>
+		</AnchorPane>
+		<AnchorPane prefHeight="93.0" prefWidth="150.0">
+			<children>
+				<ImageView fitHeight="60.0" fitWidth="63.0" layoutX="45.0"
+					layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../media/images/optionsIcon.png" />
+					</image>
+				</ImageView>
+			</children>
+		</AnchorPane>
+		<AnchorPane layoutY="96.0" prefHeight="307.0" prefWidth="650.0">
+			<children>
+				<AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="232.0"
+					prefWidth="211.0">
+					<children>
+						<Label contentDisplay="CENTER" layoutX="33.0" layoutY="51.0"
+							prefHeight="28.0" prefWidth="164.0" text="DIFFICULTY :" textFill="WHITE">
+							<font>
+								<Font name="Garamond" size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="70.0" layoutY="151.0" text="VOLUME :"
+							textFill="WHITE">
+							<font>
+								<Font name="Garamond" size="24.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+				<AnchorPane layoutX="218.0" layoutY="10.0" prefHeight="232.0"
+					prefWidth="211.0">
+					<children>
+						<JFXRadioButton id="easyBtn" fx:id="easyBtn"
+							layoutY="56.0" selected="true" text="Recruit" textFill="WHITE">
+							<toggleGroup>
+								<ToggleGroup fx:id="Difficulty" />
+							</toggleGroup>
+							<font>
+								<Font name="Garamond" size="18.0" />
+							</font>
+							<effect>
+								<SepiaTone />
+							</effect>
+						</JFXRadioButton>
+						<JFXRadioButton id="hardBtn" fx:id="hardBtn"
+							layoutX="99.0" layoutY="56.0" text="Hardened" textFill="WHITE"
+							toggleGroup="$Difficulty">
+							<font>
+								<Font name="Garamond" size="18.0" />
+							</font>
+							<effect>
+								<SepiaTone />
+							</effect>
+						</JFXRadioButton>
+						<JFXSlider fx:id="volBtn" layoutX="5.0" layoutY="143.0"
+							prefHeight="49.0" prefWidth="211.0" value="30.0" />
+					</children>
+				</AnchorPane>
+
+				<JFXButton fx:id="cancelBtn" buttonType="RAISED"
+					cancelButton="true" layoutX="65.0" layoutY="251.0" prefHeight="30.0"
+					prefWidth="99.0"
+					style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+					text="Back" textFill="WHITE">
+					<font>
+						<Font name="Garamond Bold" size="18.0" />
+					</font>
+					<effect>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</effect>
+				</JFXButton>
+				<JFXButton fx:id="defaultBtn" buttonType="RAISED"
+					defaultButton="true" layoutX="421.0" layoutY="251.0" prefHeight="34.0"
+					prefWidth="176.0"
+					style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+					text="Reset to Default" textFill="WHITE">
+					<font>
+						<Font name="Garamond Bold" size="18.0" />
+					</font>
+					<effect>
+						<InnerShadow>
+							<input>
+								<InnerShadow />
+							</input>
+						</InnerShadow>
+					</effect>
+				</JFXButton>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

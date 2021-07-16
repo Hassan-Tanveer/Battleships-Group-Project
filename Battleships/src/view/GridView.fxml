@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import controller.GridController ?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="650.0" style="-fx-background-color: #1e2f3f;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GridController">
+	<children>
+		<JFXButton fx:id="quitBtn" buttonType="RAISED" cancelButton="true"
+			layoutX="26.0" layoutY="352.0" prefHeight="30.0" prefWidth="99.0"
+			style="-fx-background-color: #314e68; -fx-border-radius: 5em; -fx-background-radius: 5em;"
+			text="Quit" textFill="WHITE">
+			<effect>
+				<InnerShadow>
+					<input>
+						<InnerShadow />
+					</input>
+				</InnerShadow>
+			</effect>
+			<font>
+				<Font name="Garamond Bold" size="18.0" />
+			</font>
+		</JFXButton>
+	</children>
+</AnchorPane>
